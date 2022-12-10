@@ -1,8 +1,10 @@
 import React from "react";
+import "./style.css";
+import MealType from "./MealType";
 
 const Meal = ()=> {
     return(
-        <>
+     
            <div className="main">
             <div className="heading">
                 <h1>Find a Meal</h1>
@@ -10,12 +12,15 @@ const Meal = ()=> {
 
             </div>
             <div className="searchbox">
-                <input type="search" className="searchbar"></input>
+                <input type="search" className="searchbar"/>
+                
 
             </div>
-
+            <div className="container">
+                  <MealType/>
+            </div>
            </div>
-        </>
+       
     )
 }
 export default Meal

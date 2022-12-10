@@ -6,17 +6,72 @@
 }
 
 body{
-    background-color: rgb(149, 192, 233);
+    background-color: rgba(153, 153, 153, 0.72);
+    text-align: center;
+    margin: auto;
+    margin-left: 0;
 }
 
-.main{
-    width: 80px;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .heading h1{
-    color: aqua;
-    font-size: 47px;
+    color: rgb(23, 89, 7);
+    font-size: 48px;
+    justify-content: center;
+    word-spacing: 0;
     letter-spacing: 1px;
+    text-align: center;
+  
+}
+
+.heading h4{
+    color: rgb(23, 89, 7);
+    letter-spacing: normal;
+    text-align: center;
+  
+}
+.searchbar{
+    margin: 1rem 0;
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+   
+    text-align: center;
+
+}
+
+.searchbox{
+    
+    
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    text-align: center;
+
+}
+
+.container{
+    width: 80%;
+    margin:30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem;
+    
+}
+.card{
+   width: 280px;
+   border-radius: 1rem;
+   background-color: rgb(88, 88, 88);
+   padding: 5px;
+}
+
+img{
+    width: 100%;
+    border-radius: 1rem 1rem 1rem 1rem;
+  
 }
