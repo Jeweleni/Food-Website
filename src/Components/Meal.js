@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
 import MealType from "./MealType";
+import Reciepe from "./Reciepe";
 
 const Meal = ()=> {
     return(
      
-           <div className="main">
+        <div className="main">
             <div className="heading">
                 <h1>Find a Meal</h1>
                 <h4>lorem, ipsum dolor sit amet consectetur adipiscing elit. placeat veritatis dictum error qui</h4>
@@ -18,8 +19,16 @@ const Meal = ()=> {
             </div>
             <div className="container">
                   <MealType/>
+                  <MealType/>
+                  <MealType/>
+                  <MealType/>
+                  <MealType/>
+                  <MealType/>
             </div>
-           </div>
+            <div className="reciepeContainer">
+                  <Reciepe/>
+            </div>
+        </div>
        
     )
 }
