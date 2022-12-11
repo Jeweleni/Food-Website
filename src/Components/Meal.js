@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import MealType from "./MealType";
-import Reciepe from "./Reciepe";
+import Recipe from "./Recipe";
 
 const Meal = ()=> {
     return(
@@ -25,8 +25,8 @@ const Meal = ()=> {
                   <MealType/>
                   <MealType/>
             </div>
-            <div className="reciepeContainer">
-                  <Reciepe/>
+            <div className="recipeContainer">
+                  <Recipe/>
             </div>
         </div>
        
