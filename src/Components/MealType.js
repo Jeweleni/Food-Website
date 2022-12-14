@@ -1,12 +1,20 @@
 import React from "react";
 
-const MealType=()=>{
+const MealType=({data})=>{
+    console.log(data)
     return(
         <>
-           <div className="card">
-            <img src="https://media.istockphoto.com/id/870064534/photo/ethiopian-food.jpg?b=1&s=170667a&w=0&k=20&c=v_ahdaTKGrPwdPINT2UDdCXUiEXvPzr4Vhf2EQ_eWn0=" alt="foodimage"/>
-            <h3>Beautiful Nigerian Dish</h3>
+           {
+            (!data) ? "Not Found" :data.map(item =>{
+                return(
+                    <div className="card">
+            <img src={item.strMealThumb} alt="foodimage"/>
+            <h3>{item.strMeal}</h3>
            </div>
+                )
+            })
+           }
+
         </>
     )
 }
