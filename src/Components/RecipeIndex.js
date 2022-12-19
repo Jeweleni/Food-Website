@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Recipe =({alphaIndex})=>{
@@ -6,10 +7,10 @@ const Recipe =({alphaIndex})=>{
     return(
         <>
             {
-                alpha.map(item=>{
+                alpha.map(type=>{
                     return(
-                        <div className="numBox" key={num++} onClick={()=>alphaIndex(item)}>
-                            <h3>{item}</h3>
+                        <div className="numBox" key={num++} onClick={()=>alphaIndex(type)}>
+                            <h3>{type}</h3>
                         </div>
                     )
                 })

@@ -6,13 +6,13 @@ import RecipeIndex from "./RecipeIndex";
 
 const Meal = ()=> {
     const[url,setUrl]= useState('https:/www.themealdb.com/api/json/v1/1/search.php?f=a');
-    const[item, setItem]= useState();
+    const[type, setType]= useState();
     const[show, setShow]= useState(false);
     const[search, setSearch]=useState("")
     useEffect(()=>{
         fetch(url).then(res=>res.json()).then(data=>{
             console.log(data.meals);
-            setItem(data.meals);
+            setType(data.meals);
             setShow(true);
         })
     },[url])
@@ -22,10 +22,12 @@ const Meal = ()=> {
     }
 
     const searchRecipe=(evt)=>{
-        if(evt.key=="Enter"){
+        if(evt.key==="Enter"){
             setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         }
     }
+
+
 
     return(
      
@@ -37,13 +39,13 @@ const Meal = ()=> {
             </div>
             <div className="searchbox">
                 <input type="search" className="searchbar"
-                 onChange={e=>setSearch(e.target.value)} onKeyPress={searchRecipe}/>
+                 onChange={e=>setSearch(e.target.value)} onKeyPress={searchRecipe} />
                 
 
             </div>
             <div className="container">
                   {
-                    show ? <MealType data={item}/>:"Not found"
+                    show ? <MealType data={type}/>:"Not found"
                   }
                   
             </div>
