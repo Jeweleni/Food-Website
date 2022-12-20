@@ -5,7 +5,7 @@ import RecipeIndex from "./RecipeIndex";
 
 
 const Meal = ()=> {
-    const[url,setUrl]= useState('https:/www.themealdb.com/api/json/v1/1/search.php?f=a');
+    const[url,setUrl]= useState('https://www.themealdb.com/api/json/v1/1/search.php?f=a');
     const[type, setType]= useState();
     const[show, setShow]= useState(false);
     const[search, setSearch]=useState("")
@@ -18,12 +18,12 @@ const Meal = ()=> {
     },[url])
 
     const setIndex=(alpha)=>{
-       setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`)
+       setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`)
     }
 
     const searchRecipe=(evt)=>{
         if(evt.key==="Enter"){
-            setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+            setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         }
     }
 
