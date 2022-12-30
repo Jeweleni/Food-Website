@@ -5,7 +5,7 @@ const RecipeInfo = () => {
     const {MealId}=useParams();
     if (MealId!=="")
     {
-        fetch(`https:/www.themealdb.com/api/json/v1/1/lookup.php?i=${MealId}`)
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${MealId}`)
         .then(res=>res.json())
         .then(data=>{
             setType(data.meals[0]);
