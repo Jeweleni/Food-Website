@@ -73,17 +73,21 @@ body{
 img{
     width: 100%;
     border-radius: 1rem 1rem 1rem 1rem;
-  
+
 }
 .card h3{
     color: white;
     font-size: 18px;
+    justify-content: center;
+    
 }
 .recipeContainer{
     display: flex;
     margin: 2.5rem 0;
+    width: 40px;
+    
 }
-.numBox{
+.numbox{
     width: 50px;
     height: 40px;
     background-color: black;
@@ -92,4 +96,53 @@ img{
     align-items: center;
     color: white;
     margin: 0 5px 0 5px;
+}
+
+.content img{
+    width: 100%;
+    height: 600px;
+}
+
+.content .innercontent{
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255,255,255,0.8);
+    color: black;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.recipe-details{
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredient .instructions{
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+.ingredient h4{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+iframe{
+    height: 515px;
+    width: 100%;
+}
+
+.video{
+    width: 80%;
+    margin: 3rem auto;
+   
 }

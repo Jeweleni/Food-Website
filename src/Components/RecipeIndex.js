@@ -9,7 +9,7 @@ const Recipe =({alphaIndex})=>{
             {
                 alpha.map(type=>{
                     return(
-                        <div className="numBox" key={num++} onClick={()=>alphaIndex(type)}>
+                        <div className="numbox" key={num++} onClick={()=>alphaIndex(type)}>
                             <h3>{type}</h3>
                         </div>
                     )
