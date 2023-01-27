@@ -33,8 +33,9 @@ const Meal = ()=> {
      
         <div className="main">
             <div className="heading">
-                <h1>Find a Meal</h1>
-                <h4>lorem, ipsum dolor sit amet consectetur adipiscing elit. placeat veritatis dictum error qui</h4>
+                <h1>JEWEL'S KITCHEN</h1>
+                <h4>Find a meal, reciepe and youtube video to create a perfect dish for you and your friends</h4>
+                
 
             </div>
             <div className="searchbox">
