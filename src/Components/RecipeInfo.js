@@ -42,19 +42,19 @@ const RecipeInfo = () => {
                         <h4>{type.strIngredient7} :{type.strMeasure7}</h4>
                         <h4>{type.strIngredient8} :{type.strMeasure8}</h4>
                     </div>
+                    </div>
                     <div className="instructions">
                         <h2>Instructions</h2>
                         <h4>{type.strInstructions}</h4>
 
                     </div>
                     <div className="video">
-                        <iframe width="
-                        100%" height="515" title="recipeVideo"
+                        <iframe 
                         src={`https://www.youtube.com/embed/${id}`}>
                             
                         </iframe>
                     </div>
-                </div>
+                
             </>)
            }
         </>
